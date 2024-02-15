@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Open Library</h1>
+    <button id="openbtn">Add Book</button>
+    <dialog>
+      <form action="" method="dialog">
+        <label for="">Name of Book</label>
+        <input type="text" id="name" required />
+        <label for="">Author</label>
+        <input type="text" id="author" required />
+        <label for="">No. of pages</label>
+        <input type="number" name="" id="pages" required />
+        <label for="">Status</label>
+        <div id="stat">
+          <input
+            type="radio"
+            name="status"
+            id="status"
+            value="Read"
+            checked
+          />Read
+          <input
+            type="radio"
+            name="status"
+            id="status"
+            value="Pending"
+          />Pending
+        </div>
+        <button id="close">Close</button>
+        <button id="done">Done!</button>
+      </form>
+    </dialog>
+    <div id="content"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
